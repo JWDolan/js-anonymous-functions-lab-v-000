@@ -15,9 +15,13 @@ function randomNumber() {
 }
 
 function menu() {
-  $('#menu').on('click', function(e) {
-    $('#menuOptions').html("You can play a song, pause a song, or view all the songs");
-  });
+  $('#menu').on('click', handleMenuClick);
+}
+
+function handleMenuClick(e) {
+  // do stuff, e.g.:
+
+  console.log('#menu was clicked!');
 }
 
 function play() {
